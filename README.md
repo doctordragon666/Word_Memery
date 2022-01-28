@@ -1,4 +1,4 @@
-[# -1. Project background
+# -1. Project background
 Make a word system, mainly to practice for yourself
 # -2. install
 Click "Release" to download and run it with the administrator
