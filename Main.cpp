@@ -22,10 +22,10 @@ void menu()
 int main()
 {
 	srand((unsigned int)time(NULL));
-	Manager man;
-	User u;
 	while (true)
 	{
+		Manager man;
+		User u;
 		menu();
 		int choice;
 		cin >> choice;

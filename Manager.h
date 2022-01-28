@@ -6,7 +6,6 @@
 #include "File.h"
 using namespace std;
 
-
 class Manager
 {
 public:
@@ -15,8 +14,12 @@ public:
 	void m_addWord();
 	void search();
 	void choose_c();
+	void choose_e();
+	void dictation_c();
+	void dictation_e();
 private:
 	vector<Word> dic;
+	vector<Error> error;
 };
 
 void Manager::submenu()
@@ -24,6 +27,7 @@ void Manager::submenu()
 	bool active = true;
 	while (active)
 	{
+		system("cls");
 		cout << "\t\t------------------------------词库挑战--------------------------------------" << endl << endl;
 		cout << "\t\t\t\t1.单选题中" << endl;
 		cout << "\t\t\t\t2.单选题英" << endl;
@@ -37,9 +41,20 @@ void Manager::submenu()
 		{
 		case 0:
 			active = false;
+			system("cls");
 			break;
 		case 1:
 			choose_c();
+			break;
+		case 2:
+			choose_e();
+			break;
+		case 3:
+			dictation_c();
+			break;
+		case 4:
+			dictation_e();
+			break;
 		default:
 			break;
 		}
@@ -48,12 +63,13 @@ void Manager::submenu()
 
 Manager::Manager()
 {
-	dic = loadFile(WORD_FILE);
+	dic = f.loadFile(WORD_FILE);
+	error = f.loadFile(USER_FILE,0);
 }
 
 void Manager::m_addWord()
 {
-	save(addWord(dic),WORD_FILE);
+	f.save(f.addWord(dic),WORD_FILE);
 }
 
 void Manager::search()
@@ -69,11 +85,11 @@ void Manager::search()
 			system("cls");
 			break;
 		}
-		pair<bool, Word> result = find(find_word, dic);
-		if (result.first)
+		auto result = f.find_word(find_word, dic);
+		if (result.tag)
 		{
 			cout << endl << "\t\t已找到" << endl;
-			result.second.show();
+			result.v.show();
 		}
 		else
 		{
@@ -87,5 +103,20 @@ void Manager::search()
 
 void Manager::choose_c()
 {
+	f.choose_c(dic, error);
+}
 
+void Manager::choose_e()
+{
+	f.choose_e(dic, error);
+}
+
+void Manager::dictation_c()
+{
+	f.dictation_c(dic, error);
+}
+
+void Manager::dictation_e()
+{
+	f.dictation_e(dic, error);
 }

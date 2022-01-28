@@ -1,0 +1,8 @@
+assign 赋值 1
+seed 种子 0
+convention 大会 0
+reserve 预留空间 0
+school 学校/学派 0
+omitted 省略 0
+school 学校/学派 0
+school 学校/学派 0
