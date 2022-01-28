@@ -5,7 +5,6 @@ class User
 {
 public:
 	User();
-	~User();
 	void subMenu();
 private:
 	vector<Word> self_dic;
@@ -14,10 +13,6 @@ private:
 User::User()
 {
 	self_dic = loadFile(USER_FILE);
-}
-
-User::~User()
-{
 }
 
 void User::subMenu()

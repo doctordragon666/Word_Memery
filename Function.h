@@ -79,11 +79,11 @@ vector<Word> addWord(vector<Word> w_lst)
 			system("cls");
 			if (k >= 1)
 			{
-				cout<<"\n单词导入词库成功，本次共导入"<<k<<"个单词！！\n\n";
+				cout<<"\n\t\t单词导入词库成功，本次共导入"<<k<<"个单词！！\n\n\t\t";
 			}
 			else
 			{
-				cout << "\n您没有导入任何单词！！\n\n" << endl;
+				cout << "\n\t\t您没有导入任何单词！！\n\n" << endl;
 			}
 			cout << "\t\t<回车键返回菜单>";
 			system("pause");
@@ -128,3 +128,7 @@ pair<bool, Word> find(string find_word, vector<Word> dic)
 	return make_pair(false, Word(find_word, find_word));
 }
 
+void choose_c(vector<Word> w_lst)
+{
+
+}

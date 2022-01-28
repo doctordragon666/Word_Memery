@@ -5,6 +5,8 @@
 #include "Function.h"
 #include "File.h"
 using namespace std;
+
+
 class Manager
 {
 public:
@@ -12,6 +14,7 @@ public:
 	void submenu();
 	void m_addWord();
 	void search();
+	void choose_c();
 private:
 	vector<Word> dic;
 };
@@ -26,7 +29,7 @@ void Manager::submenu()
 		cout << "\t\t\t\t2.单选题英" << endl;
 		cout << "\t\t\t\t3.默写题中" << endl;
 		cout << "\t\t\t\t4.默写题英" << endl;
-		cout << "\t\t\t\t4.默写题英" << endl;
+		cout << "\t\t\t\t0.退出挑战" << endl;
 		cout << "\t\t\t\t         请输入你的选择：_________\b\b\b\b\b\b";
 		int choice;
 		cin >> choice;
@@ -36,7 +39,7 @@ void Manager::submenu()
 			active = false;
 			break;
 		case 1:
-			
+			choose_c();
 		default:
 			break;
 		}
@@ -80,4 +83,9 @@ void Manager::search()
 		system("pause");
 		system("cls");
 	}
+}
+
+void Manager::choose_c()
+{
+
 }
