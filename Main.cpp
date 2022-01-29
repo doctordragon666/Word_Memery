@@ -10,13 +10,13 @@ using namespace std;
 
 void menu()
 {
-	cout << "\t\t------------------------------单词系统--------------------------------------" << endl << endl;
-	cout << "\t\t\t\t1.录入单词" << endl;
-	cout << "\t\t\t\t2.词库挑战" << endl;
-	cout << "\t\t\t\t3.错词挑战" << endl;
-	cout << "\t\t\t\t4.查找单词" << endl;
-	cout << "\t\t\t\t0.退出系统" << endl;
-	cout << "\t\t\t\t         请输入你的选择：_________\b\b\b\b\b\b";
+	cout << "\t\t------------------------------单词系统--------------------------------------\n\t\t||\n";
+	cout << "\t\t||\t\t1.录入单词" << endl;
+	cout << "\t\t||\t\t2.词库挑战" << endl;
+	cout << "\t\t||\t\t3.错词挑战" << endl;
+	cout << "\t\t||\t\t4.查找单词" << endl;
+	cout << "\t\t||\t\t0.退出系统" << endl;
+	cout << "\t\t||\t\t         请输入你的选择：_________\b\b\b\b\b\b";
 }
 
 int main()

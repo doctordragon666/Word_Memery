@@ -98,7 +98,7 @@ public:
 			w_lst.push_back(w);
 			//单词加入词库
 			k++;//单词数统计
-			cout << "\t\t加入成功" << endl;
+			cout << "\t\t加入成功\n\t\t";
 		}
 	}
 
@@ -248,21 +248,22 @@ public:
 			vector<int> book;
 			int t = random(w_lst.size());
 			book.push_back(t);
-			cout << "请选择中文“" << w_lst[t].Chinese_lst[random(w_lst[t].Chinese_lst.size())] << "”的英语单词（输入m返回菜单）：\a";
+			cout << "\t\t请选择中文“" << w_lst[t].Chinese_lst[random(w_lst[t].Chinese_lst.size())] << "”的英语单词（输入m返回菜单）：";
 
 			string wer = w_lst[t].English;//存好答案; 
 			//初始化选项
 			shuffle_word(book, w_lst.size(),4);
 			for (int i = 0; i < 4; i++) 
 			{
+				cout << "\t\t";
 				cout.put('A' + i) << "." << w_lst[book[i]].English << "     ";
 			}
-			cout << endl << "\t\t答案：";
+			cout << "\n\n\t\t答案：";
 			//输入答案
 			char answer;
 			cin >> answer;
 			if (answer == 'm') {
-				cout << "\n\n\t\t本次总共得" << score << "分!!!\n\n";
+				cout << "\n\n\t\t本次总共得" << score << "分!!!\n\n\t\t";
 				system("pause");
 				system("cls");
 				return;
@@ -283,7 +284,7 @@ public:
 			}
 			else
 			{
-				cout << "\n\t\t答案错误，正确答案是：" << wer << endl;
+				cout << "\n\t\t\a答案错误，正确答案是：" << wer << endl;
 				auto error = find_word(wer, error_lst);
 				if (error.tag)
 					++error_lst[error.serial];
@@ -320,7 +321,7 @@ public:
 			vector<string> answer = w_lst[seed].Chinese_lst;
 			if (msg == "m")
 			{
-				cout << "\n\n\t\t本次总共得" << score << "分!!!\n\n";
+				cout << "\n\n\t\t本次总共得" << score << "分!!!\n\n\t\t";
 				system("pause");
 				system("cls");
 				return;
@@ -331,7 +332,7 @@ public:
 			}
 			else
 			{
-				cout << endl << "\t\t写错了“" << w_lst[seed].English << "”的中文意思是:";
+				cout << endl << "\t\t写错了“" << w_lst[seed].English << "”的中文意思是:" << w_lst[seed].Chinese;
 				auto error = find_word(w_lst[seed].English, error_lst);
 				if (error.tag)
 					++error_lst[error.serial];
