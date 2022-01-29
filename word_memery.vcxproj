@@ -150,6 +150,7 @@
     <ClInclude Include="Word.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="base.txt" />
     <Text Include="user.txt" />
     <Text Include="word.txt" />
   </ItemGroup>

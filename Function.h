@@ -4,6 +4,7 @@
 #include <vector>
 #include <fstream>
 #include <algorithm>
+#include <functional>
 #include "Word.h"
 #include "File.h"
 using namespace std;
@@ -15,6 +16,20 @@ struct Find_type
 	bool tag;
 	T v;
 };
+
+class MySort
+{
+public:
+	bool operator()(Error a, Error b)
+	{
+		return a.error_time < b.error_time;
+	}
+	bool operator()(Word a, Word b)
+	{
+		return a.English < b.English;
+	}
+};
+
 
 class Fun
 {
@@ -96,8 +111,12 @@ public:
 		{
 			v.push_back(Word(a, b));
 		}
+		sort(v.begin(), v.end(), MySort());
+		auto it = unique(v.begin(), v.end());
+		vector<Word> v_ture(v.begin(),it);
 		ifs.close();
-		return v;
+		save(v_ture, filename);
+		return v_ture;
 	}
 
 	vector<Error> loadFile(string filename, int tag)
@@ -106,11 +125,26 @@ public:
 		ifstream ifs(filename, ios::in);
 		string a, b;
 		int c;
-		while (ifs >> a && ifs >> b && ifs >> c)
+		if (tag)
 		{
-			v.push_back(Error(a, b, c));
+			while (ifs >> a && ifs >> b)
+			{
+				v.push_back(Error(a, b, 0));
+			}
+		}
+		else
+		{
+			while (ifs >> a && ifs >> b && ifs >> c)
+			{
+				v.push_back(Error(a, b, c));
+			}
 		}
 		ifs.close();
+		sort(v.begin(), v.end(), MySort());
+		auto it = unique(v.begin(), v.end());
+		vector<Error> v_ture(v.begin(), it);
+		ifs.close();
+		save(v_ture, filename);
 		return v;
 	}
 

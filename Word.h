@@ -44,6 +44,17 @@ public:
 	string English;
 	pair<string, string> dic;
 	vector<string> Chinese_lst;
+	bool operator==(Word& a)
+	{
+		if (a.English == this->English)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 };
 
 Word::Word(){}
@@ -87,6 +98,17 @@ public:
 	{
 		++error_time;
 		return *this;//返回引用，因为每次只能对同一it相加
+	}
+	bool operator==(Error& a)
+	{
+		if (a.English == this->English)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 };
 

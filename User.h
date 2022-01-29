@@ -19,6 +19,11 @@ private:
 User::User()
 {
 	self_dic = f.loadFile(USER_FILE,0);
+	if (self_dic.size() == 0)
+	{
+		self_dic = f.loadFile(BASE_FILE, 1);
+		f.save(self_dic, USER_FILE);
+	}
 }
 
 void User::subMenu()
@@ -86,15 +91,15 @@ void User::dictation_e()
 void User::kill_word()
 {
 	system("cls");
-	for (auto i : self_dic)
+	for (auto it = self_dic.begin(); it != self_dic.end(); it++)
 	{
-		i.show();
+		it->show();
 		cout << "\n\n\t\t是否要斩掉这个单词(按k斩,0退出,其他键继续): ";
 		string tip;
 		cin >> tip;
 		if (tip == "k")
 		{
-			self_dic.push_back(i);
+			self_dic.erase(it);
 			cout << "\t\t已经删除";
 		}
 		else if(tip == "0")
@@ -103,7 +108,8 @@ void User::kill_word()
 		}
 		else
 		{
-			;
+			system("cls");
+			continue;
 		}
 		system("cls");
 	}
