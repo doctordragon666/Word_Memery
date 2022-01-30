@@ -1,6 +1,4 @@
-school 学校/学派 0
 assault 袭击 0
-assemble 集合 0
 assembly 会议 0
 assert 断言 0
 assess 评价 0
