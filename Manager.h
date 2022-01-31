@@ -6,17 +6,35 @@
 #include "File.h"
 using namespace std;
 
+/*
+
+定义了管理员，从整体上管理这个文件，不可以清除用户的数据
+构造函数
+成员：1.自定义词库
+	 2.错误词库
+接口：
+1.子菜单
+2.添加单词
+3.查找
+4.添加单词
+5.选择题中
+6.选择题英
+7.默写题中
+8.默写题英
+
+*/
+
 class Manager
 {
 public:
 	Manager();
 	void submenu();
 	void m_addWord();
-	void search();
 	void choose_c();
 	void choose_e();
 	void dictation_c();
 	void dictation_e();
+	void search();
 private:
 	vector<Word> dic;
 	vector<Error> error;

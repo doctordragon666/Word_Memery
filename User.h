@@ -2,6 +2,24 @@
 #include <iostream>
 #include "Function.h"
 using namespace std;
+
+/*
+
+定义了用户，从整体上保存这个文件
+构造函数
+成员：自定义词库
+接口：
+1.子菜单
+2.添加单词
+3.斩词模式
+4.添加单词
+5.选择题中
+6.选择题英
+7.默写题中
+8.默写题英
+
+*/
+
 class User
 {
 public:

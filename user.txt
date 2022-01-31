@@ -1,4 +1,4 @@
-assault 袭击 0
+shift 转移/改变/当班时间/转变 0
 assembly 会议 0
 assert 断言 0
 assess 评价 0
@@ -18,7 +18,6 @@ lens 镜头 0
 run 逃跑/运行/竞选/一段时期 0
 seed 种子 0
 set 设置/放置/组/套装/片场/演出/准备好了的/固定不变的 0
-shift 转移/改变/当班时间/转变 0
 speculate 推测 0
 terrific 极好的 0
 therapy 治疗 0
@@ -33,7 +32,9 @@ dim 昏暗 0
 heap 堆 0
 mortgage 抵押 0
 indifferent 不在乎的/一般的 0
+assault 袭击 1
 aid 援助/辅助物品/帮助 1
 September 九月 1
 omitted 省略 1
 reserve 预留空间 1
+shift 转移/改变/当班时间/转变 3

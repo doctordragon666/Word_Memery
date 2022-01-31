@@ -8,6 +8,23 @@
 #include "Word.h"
 #include "File.h"
 using namespace std;
+/*
+定义全局函数的类以及一些结构，以及仿函数谓词
+结构体：查找返回类型（序号，返回逻辑，返回对象）
+类封装的函数
+1.添加单词
+2.选择题中
+3.选择题英
+4.默写题中
+5.默写题英
+6.加载文件，重载两个版本
+7.随机函数，重载两个版本
+8.根据数据保存格式保存到文件
+9.打乱选择题选项。
+10.保存记录
+仿函数谓词
+给不同的类型建立谓词
+*/
 
 template<typename T>
 struct Find_type
@@ -201,7 +218,7 @@ public:
 			}
 			while (true)
 			{
-				if (answer - 'A' > 4)
+				if (answer - 'A' >= 4 || answer - 'A' <= 0)
 				{
 					cout << "\n\t\t输入有误！！\n\n";
 					cin >> answer;

@@ -27,6 +27,7 @@ fatigue 疲劳
 heap 堆
 hedge 树篱/障碍物
 hoax 骗局
+horn 喇叭/角制品
 idle 清闲的/懒散的/虚度
 indifferent 不在乎的/一般的
 inward 向中心的/内心的
@@ -40,6 +41,7 @@ omitted 省略
 overtake 赶上/突然降临
 overwhelm 使不知所措/使应接不暇/彻底击败
 realm 领域
+refrain 抑制
 reserve 预留空间
 run 逃跑/运行/竞选/一段时期
 school 学校/学派

@@ -1,5 +1,8 @@
-﻿// word_memery.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿/*
+项目名称：单词记忆系统
+需求分析：
+增删改查
+*/
 
 #include <iostream>
 #include "Manager.h"
