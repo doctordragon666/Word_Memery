@@ -3,19 +3,23 @@
 #include "Choose.h"
 #include "Review.h"
 #include "Kill.h"
+#include "Show.h"
 class AlgorithmFactory
 {
-	static Context* CreateContext(char strategy)
+public:
+	static Context* CreateContext(int strategy)
 	{
 		Context* context = nullptr;
 		switch (strategy)
 		{
-		case 'C':
+		case 1:
 			context = new Context(new Choose());
-		case 'R':
+		case 2:
 			context = new Context(new Review());
-		case 'K':
+		case 3:
 			context = new Context(new Kill());
+		case 4:
+			context = new Context(new Show());
 		default:
 			break;
 		}

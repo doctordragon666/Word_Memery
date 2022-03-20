@@ -36,10 +36,19 @@
     <ClCompile Include="Xinghuo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="WordInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Record.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Exam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="AlgorithmFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="WordInfo.cpp">
+    <ClCompile Include="Show.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -92,6 +101,15 @@
     <ClInclude Include="WordInfo.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Record.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Exam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Show.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="word.txt">
@@ -101,6 +119,9 @@
       <Filter>资源文件</Filter>
     </Text>
     <Text Include="base.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="record.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

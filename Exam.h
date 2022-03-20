@@ -1,8 +1,7 @@
 #pragma once
 #include "Bookbase.h"
-class Xinghuo :
+class Exam :
     public Bookbase
 {
-
 };
 

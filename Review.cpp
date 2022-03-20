@@ -1,6 +1,6 @@
 #include "Review.h"
 #include "Config.h"
-void Review::AlgorithmInterface()
-{
-	cout << "默写题实现";
-}
+//void Review::AlgorithmInterface()
+//{
+//	cout << "默写题实现";
+//}

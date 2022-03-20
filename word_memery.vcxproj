@@ -143,10 +143,13 @@
     <ClCompile Include="AlgorithmFactory.cpp" />
     <ClCompile Include="Bookbase.cpp" />
     <ClCompile Include="Choose.cpp" />
+    <ClCompile Include="Exam.cpp" />
     <ClCompile Include="Kill.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Memery.cpp" />
+    <ClCompile Include="Record.cpp" />
     <ClCompile Include="Review.cpp" />
+    <ClCompile Include="Show.cpp" />
     <ClCompile Include="WordInfo.cpp" />
     <ClCompile Include="Xinghuo.cpp" />
   </ItemGroup>
@@ -156,13 +159,16 @@
     <ClInclude Include="Choose.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Context.h" />
+    <ClInclude Include="Exam.h" />
     <ClInclude Include="File.h" />
     <ClInclude Include="Function.h" />
     <ClInclude Include="Kill.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Memery.h" />
+    <ClInclude Include="Record.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Review.h" />
+    <ClInclude Include="Show.h" />
     <ClInclude Include="Strategy.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="WordInfo.h" />
@@ -170,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="base.txt" />
+    <Text Include="record.txt" />
     <Text Include="user.txt" />
     <Text Include="word.txt" />
   </ItemGroup>
