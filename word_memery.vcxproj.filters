@@ -51,6 +51,18 @@
     <ClCompile Include="Show.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="WordBook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExamWord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Init.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Manager.h">
@@ -108,6 +120,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Show.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WordBook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExamWord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Init.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

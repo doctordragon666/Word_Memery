@@ -1,7 +1,11 @@
 #include "Show.h"
 #include "Config.h"
 
-void Show::AlgorithmInterface()
+int Show::AlgorithmInterface()
 {
-	cout << "日志显示方式";
+	cout << "------------显示方式-----------" << endl;
+	cout << "1.显示日志" << endl;
+	cout << "2.显示考研词库" << endl;
+	cout << "3.显示总词库" << endl;
+	return 0;
 }

@@ -9,17 +9,22 @@ class AlgorithmFactory
 public:
 	static Context* CreateContext(int strategy)
 	{
+		//¾²Ì¬·½·¨
 		Context* context = nullptr;
 		switch (strategy)
 		{
 		case 1:
 			context = new Context(new Choose());
+			break;
 		case 2:
 			context = new Context(new Review());
+			break;
 		case 3:
 			context = new Context(new Kill());
+			break;
 		case 4:
 			context = new Context(new Show());
+			break;
 		default:
 			break;
 		}

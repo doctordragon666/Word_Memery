@@ -4,6 +4,14 @@ class Show :
     public Strategy
 {
 public:
-    void AlgorithmInterface();
+    int AlgorithmInterface();
 };
 
+class ShowLog : public Show
+{
+public:
+    ShowLog()
+    {
+
+    }
+};

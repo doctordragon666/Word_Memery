@@ -1,13 +1,18 @@
 #pragma once
 #include "Strategy.h"
+/*
+算法的上下文管理器
+*/
+
 class Context
 {
 public:
-	Strategy* m_strategy;
-	Context(Strategy* strategy) :m_strategy(strategy) {}
-	void ContextInterface()
+	Context(Strategy* strategy) :m_strategy(strategy) {}//传入一个算法对象，并且由这个类提供统一的接口
+	void ContextInterface(unsigned int& score)
 	{
-		m_strategy->AlgorithmInterface();
+		score += m_strategy->AlgorithmInterface();//调用算法接口，然后获取返回值
 	}
+private:
+	Strategy* m_strategy;//唯一的私有变量，算法类
 };
 

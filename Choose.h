@@ -5,6 +5,7 @@ using namespace std;
 class Choose :
     public Strategy
 {
-    void AlgorithmInterface();
+public:
+    int AlgorithmInterface();//选择题通用接口
 };
 

@@ -1,12 +1,12 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <vector>
-#include <map>
+//系统文件
 #include "File.h"
-#include "Record.h"
-#include <time.h>
-#include <fstream>
+//自定义类文件
+#include "Strategy.h"
 #include "AlgorithmFactory.h"
-#include "Show.h"
-using namespace std;
+#include "Context.h"
+#include "Record.h"
+
+#include "Bookbase.h"
+#include "Exam.h"
+#include "Xinghuo.h"

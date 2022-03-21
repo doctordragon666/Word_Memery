@@ -3,6 +3,6 @@
 class Review :
     public Strategy
 {
-    void AlgorithmInterface() {}
+    int AlgorithmInterface() { return 0; }
 };
 

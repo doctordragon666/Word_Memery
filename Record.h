@@ -1,6 +1,5 @@
 #pragma once
-#include "Config.h"
-#define _CRT_SECURE_NO_WARNINGS
+#include "File.h"
 //记录类：记录每一次的记录方便生成记忆曲线
 
 class Record

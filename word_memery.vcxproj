@@ -143,13 +143,17 @@
     <ClCompile Include="AlgorithmFactory.cpp" />
     <ClCompile Include="Bookbase.cpp" />
     <ClCompile Include="Choose.cpp" />
+    <ClCompile Include="ChooseC.cpp" />
     <ClCompile Include="Exam.cpp" />
+    <ClCompile Include="ExamWord.cpp" />
+    <ClCompile Include="Init.cpp" />
     <ClCompile Include="Kill.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Memery.cpp" />
     <ClCompile Include="Record.cpp" />
     <ClCompile Include="Review.cpp" />
     <ClCompile Include="Show.cpp" />
+    <ClCompile Include="WordBook.cpp" />
     <ClCompile Include="WordInfo.cpp" />
     <ClCompile Include="Xinghuo.cpp" />
   </ItemGroup>
@@ -157,11 +161,14 @@
     <ClInclude Include="AlgorithmFactory.h" />
     <ClInclude Include="Bookbase.h" />
     <ClInclude Include="Choose.h" />
+    <ClInclude Include="ChooseC.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="Exam.h" />
+    <ClInclude Include="ExamWord.h" />
     <ClInclude Include="File.h" />
     <ClInclude Include="Function.h" />
+    <ClInclude Include="Init.h" />
     <ClInclude Include="Kill.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Memery.h" />
@@ -171,6 +178,7 @@
     <ClInclude Include="Show.h" />
     <ClInclude Include="Strategy.h" />
     <ClInclude Include="User.h" />
+    <ClInclude Include="WordBook.h" />
     <ClInclude Include="WordInfo.h" />
     <ClInclude Include="Xinghuo.h" />
   </ItemGroup>

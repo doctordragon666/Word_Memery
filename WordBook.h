@@ -1,11 +1,7 @@
 #pragma once
 #include "Bookbase.h"
-class Exam :
+class WordBook :
     public Bookbase
 {
-public:
-    
-private:
-
 };
 

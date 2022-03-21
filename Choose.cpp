@@ -1,7 +1,8 @@
 #include "Choose.h"
 #include <iostream>
 using namespace std;
-void Choose::AlgorithmInterface()
+int Choose::AlgorithmInterface()
 {
 	cout << "选择题算法实现" << endl;
+	return 0;
 }

@@ -1,9 +1,10 @@
 #pragma once
 #include "Strategy.h"
-class Kill :
+class Search :
     public Strategy
 {
 public:
+    Search();
     int AlgorithmInterface();
 };
 
