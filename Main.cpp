@@ -5,6 +5,7 @@
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include "Config.h"
+extern Bookbase* base;
 
 void menu()
 {
@@ -22,7 +23,6 @@ int main()
 {
 	unsigned int score = 0; //初始化积分
 	//预先加载各个词库
-	extern Bookbase* base;
 	while (true)
 	{
 		//主循环开始根据输入来执行不同的算法
@@ -44,7 +44,9 @@ int main()
 		}
 	}
 	//程序结束保存结果
+	base->Load();
 	Record(score).Save();
+	system("pause");
 	return 0;
 }
 

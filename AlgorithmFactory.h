@@ -4,6 +4,7 @@
 #include "Review.h"
 #include "Kill.h"
 #include "Show.h"
+#include "Change.h"
 class AlgorithmFactory
 {
 public:
@@ -25,6 +26,8 @@ public:
 		case 4:
 			context = new Context(new Show());
 			break;
+		case 5:
+			context = new Context(new Change());
 		default:
 			break;
 		}

@@ -21,5 +21,5 @@ using namespace std;
 
 inline bool isrange(int choose)
 {
-	return choose < 7 && choose > 0;
+	return choose <= 7 && choose >= 0;
 }
