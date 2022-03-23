@@ -9,14 +9,14 @@ extern Bookbase* base;
 
 void menu()
 {
-	cout << "\t\t------------------------------单词系统-----------------------------------\n\t\t||\n" << internal;
-	cout << "\t\t||\t\t1.选择题" << endl;
-	cout << "\t\t||\t\t2.默写题" << endl;
-	cout << "\t\t||\t\t3.斩词" << endl;
-	cout << "\t\t||\t\t4.查看记录" << endl;
-	cout << "\t\t||\t\t5.显示词库" << endl;
-	cout << "\t\t||\t\t0.退出系统" << endl;
-	cout << "\t\t||\t\t         请输入你的选择：_________\b\b\b\b\b\b";
+	cout << "------------------------------单词系统-----------------------------------\n||\n" << internal;
+	cout << "||\t\t1.选择题" << endl;
+	cout << "||\t\t2.默写题" << endl;
+	cout << "||\t\t3.斩词" << endl;
+	cout << "||\t\t4.查看记录" << endl;
+	cout << "||\t\t5.更换词库" << endl;
+	cout << "||\t\t0.退出系统" << endl;
+	cout << "||\t\t         请输入你的选择：_________\b\b\b\b\b\b";
 }
 
 int main()

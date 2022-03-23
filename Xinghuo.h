@@ -4,6 +4,7 @@ class Xinghuo :
     public Bookbase
 {
 public:
+    Xinghuo();
     //读取自己的文件
     //放入单词列表中
     //按照组名来进行抽取

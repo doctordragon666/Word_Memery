@@ -4,7 +4,7 @@ class Exam :
     public Bookbase
 {
 public:
-    
+    Exam();
 private:
 
 };

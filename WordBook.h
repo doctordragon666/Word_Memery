@@ -3,5 +3,8 @@
 class WordBook :
     public Bookbase
 {
+public:
+    WordBook();
+    ~WordBook();
 };
 

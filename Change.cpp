@@ -14,7 +14,7 @@ Change::Change()
 	cout << "2.考试词库" << endl;
 	cout << "3.星火词库" << endl;
 	cout << "4.书本词库" << endl;
-	cout << "0.退出词库" << endl;
+	cout << "0.取消更改" << endl;
 	cout << "你确定要更改吗？请输入词库类别（每次仅允许一次操作）" << endl;
 }
 

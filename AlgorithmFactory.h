@@ -28,6 +28,7 @@ public:
 			break;
 		case 5:
 			context = new Context(new Change());
+			break;
 		default:
 			break;
 		}

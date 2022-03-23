@@ -1,5 +1,10 @@
 #include "Bookbase.h"
 
+Bookbase::Bookbase()
+{
+	cout << "总书库创建";
+}
+
 void Bookbase::Load()
 {
 	cout << "load";
@@ -15,4 +20,9 @@ void Bookbase::Load()
 	//	cout << buf << endl;
 	//	system("pause");
 	//}
+}
+
+Bookbase::~Bookbase()
+{
+	cout << "总书库析构";
 }
