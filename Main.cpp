@@ -5,7 +5,6 @@
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include "Config.h"
-extern Bookbase* base;
 
 void menu()
 {
@@ -23,6 +22,7 @@ int main()
 {
 	unsigned int score = 0; //初始化积分
 	//预先加载各个词库
+	Bookbase* root_base = new Bookbase();
 	while (true)
 	{
 		//主循环开始根据输入来执行不同的算法
@@ -36,16 +36,20 @@ int main()
 		Context* context = AlgorithmFactory::CreateContext(choose);
 		if (context)
 		{
+			context->setbase(root_base);
 			context->ContextInterface(score);
+			root_base = context->global_b;
 		}
 		else
 		{
 			break;//返回为空的时候终止程序
 		}
+		system("pause");
+		system("cls");
 	}
 	//程序结束保存结果
-	base->Load();
 	Record(score).Save();
+	delete root_base;
 	system("pause");
 	return 0;
 }

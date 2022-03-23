@@ -18,28 +18,30 @@ Change::Change()
 	cout << "你确定要更改吗？请输入词库类别（每次仅允许一次操作）" << endl;
 }
 
-int Change::AlgorithmInterface()
+int Change::AlgorithmInterface(Bookbase** global_b)
 {
 	int choose = 0;
 	cin >> choose;
 	switch (choose)
 	{
 	case 1:
-		base = new Bookbase();
+		*global_b = new Bookbase();
 		break;
 	case 2:
-		base = new Exam();
+		*global_b = new Exam();
 		break;
 	case 3:
-		base = new Xinghuo();
+		*global_b = new Xinghuo();
 		break;
 	case 4:
-		base = new WordBook();
+		*global_b = new WordBook();
 		break;
 	case 0:
 		break;
 	default:
 		break;
 	}
-	return 0;
+	system("pause");
+	system("cls");
+	return 0;//返回0，因为更换书库不增加任何的分数
 }

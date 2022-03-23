@@ -3,6 +3,6 @@
 class Review :
     public Strategy
 {
-    int AlgorithmInterface() { return 0; }
+    int AlgorithmInterface(Bookbase** global_b);
 };
 

@@ -3,6 +3,6 @@
 class ChooseC :
     public Choose
 {
-    int AlgorithmInterface();//实现英选中的接口
+    int AlgorithmInterface(Bookbase** global_b);//实现英选中的接口
 };
 

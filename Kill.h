@@ -4,6 +4,6 @@ class Kill :
     public Strategy
 {
 public:
-    int AlgorithmInterface();
+    int AlgorithmInterface(Bookbase** global_b);
 };
 

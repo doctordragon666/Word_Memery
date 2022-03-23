@@ -1,6 +1,7 @@
 #include "Review.h"
 #include "Config.h"
-//void Review::AlgorithmInterface()
-//{
-//	cout << "默写题实现";
-//}
+int Review::AlgorithmInterface(Bookbase** global_b)
+{
+	cout << "默写题实现";
+	return 0;
+}

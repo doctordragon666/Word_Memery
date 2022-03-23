@@ -45,9 +45,6 @@
     <ClCompile Include="Exam.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="AlgorithmFactory.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="WordBook.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -64,6 +61,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Show.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Context.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -158,6 +158,9 @@
       <Filter>资源文件</Filter>
     </Text>
     <Text Include="base\xing.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="test.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

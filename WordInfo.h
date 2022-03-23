@@ -24,9 +24,13 @@ class WordInfo
 public:
 	virtual void showself();
 	WordInfo();
+	friend ostream& operator<<(ostream& out, WordInfo& w);
+	friend istream& operator>>(istream& in, WordInfo& w);
 protected:
 	int m_error_time;
-	std::string source;//来源
+	string Chinese;
+	string English;
+	string source;//来源
 //	vector<string> split(string& s, char c)
 //	{
 //		vector<string> v;
@@ -137,10 +141,6 @@ protected:
 //
 //	Error::Error(string e, string c, int t) :Word(e, c), error_time(t) {}
 //
-//	ostream& operator <<(ostream& out, Error w)
-//	{
-//		out << w.English << " " << w.Chinese << " " << w.error_time;
-//		return out;
-//	}
+
 };
 

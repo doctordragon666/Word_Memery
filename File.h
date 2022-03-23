@@ -12,6 +12,7 @@
 #define USER_FILE "user.txt"
 #define RECORD_FILE "record.txt"
 #define EXAM_FILE ".\\base\\exam.txt"
+#define TEST_FILE "test.txt"
 
 #include <iostream>
 #include <vector>
@@ -22,4 +23,30 @@ using namespace std;
 inline bool isrange(int choose)
 {
 	return choose <= 7 && choose >= 0;
+}
+
+inline vector<string> split(string& s, char c)
+{
+	vector<string> v;
+	string behind;
+	string end = s;
+	while (end != "")
+	{
+		size_t pos = end.find(c);
+		if (pos != -1)
+		{
+			behind = end.substr(0, pos);
+			if (behind != "")
+			{
+				v.push_back(behind);
+			}
+			end = end.substr(pos + 1, s.size());
+		}
+		else
+		{
+			v.push_back(end);
+			break;
+		}
+	}
+	return v;
 }

@@ -5,6 +5,7 @@ class Exam :
 {
 public:
     Exam();
+    void Load();
 private:
 
 };

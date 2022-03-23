@@ -140,11 +140,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AlgorithmFactory.cpp" />
     <ClCompile Include="Bookbase.cpp" />
     <ClCompile Include="Change.cpp" />
     <ClCompile Include="Choose.cpp" />
     <ClCompile Include="ChooseC.cpp" />
+    <ClCompile Include="Context.cpp" />
     <ClCompile Include="Exam.cpp" />
     <ClCompile Include="ExamWord.cpp" />
     <ClCompile Include="Init.cpp" />
@@ -189,6 +189,7 @@
     <Text Include="base\exam.txt" />
     <Text Include="base\xing.txt" />
     <Text Include="record.txt" />
+    <Text Include="test.txt" />
     <Text Include="user.txt" />
     <Text Include="word.txt" />
   </ItemGroup>
