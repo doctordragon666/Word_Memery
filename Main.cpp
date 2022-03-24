@@ -48,7 +48,10 @@ int main()
 		system("cls");
 	}
 	//程序结束保存结果
-	Record(score).Save();
+	if (score)
+	{
+		Record(score).Save();
+	}
 	delete root_base;
 	system("pause");
 	return 0;

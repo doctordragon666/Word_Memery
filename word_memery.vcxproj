@@ -141,6 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bookbase.cpp" />
+    <ClCompile Include="BookWord.cpp" />
     <ClCompile Include="Change.cpp" />
     <ClCompile Include="Choose.cpp" />
     <ClCompile Include="ChooseC.cpp" />
@@ -161,6 +162,7 @@
   <ItemGroup>
     <ClInclude Include="AlgorithmFactory.h" />
     <ClInclude Include="Bookbase.h" />
+    <ClInclude Include="BookWord.h" />
     <ClInclude Include="Change.h" />
     <ClInclude Include="Choose.h" />
     <ClInclude Include="ChooseC.h" />
@@ -187,6 +189,7 @@
   <ItemGroup>
     <Text Include="base.txt" />
     <Text Include="base\exam.txt" />
+    <Text Include="base\textbook.txt" />
     <Text Include="base\xing.txt" />
     <Text Include="record.txt" />
     <Text Include="test.txt" />

@@ -21,3 +21,15 @@ void WordInfo::showself()
 {
 	cout << English << Chinese << endl;
 }
+
+bool WordInfo::operator==(WordInfo& a)
+{
+	if (a.English == this->English)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}

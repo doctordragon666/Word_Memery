@@ -31,84 +31,10 @@ public:
 	}
 	friend ostream& operator<<(ostream& out, WordInfo& w);
 	friend istream& operator>>(istream& in, WordInfo& w);
-	bool operator==(WordInfo& a)  
-	{
-		if (a.English == this->English)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}//重载等号用于去重复
+	bool operator==(WordInfo& a);
 protected:
 	int m_error_time;
 	string Chinese;
 	string English;
-
-//	class Word
-//	{
-//	public:
-//		Word();
-//		Word(string e, string c);
-//		void show(vector<string> v);
-//		void show();
-//		string Chinese;
-//		string English;
-//		pair<string, string> dic;
-//		vector<string> Chinese_lst;
-//		bool operator==(Word& a)
-//		{
-//			if (a.English == this->English)
-//			{
-//				return true;
-//			}
-//			else
-//			{
-//				return false;
-//			}
-//		}
-//	};
-//
-//
-//	Word::Word(string e, string c)
-//	{
-//		this->English = e;
-//		this->Chinese_lst = split(c, '/');
-//		this->dic = make_pair(e, c);
-//		this->Chinese = c;
-//	}
-//
-//	void Word::show(vector<string> v)
-//	{
-//		cout << "它的汉语意思有：" << endl;
-//		for (auto i : v)
-//		{
-//			cout << "\t\t" << i << endl;
-//		}
-//	}
-//
-//	void Word::show()
-//	{
-//		cout << endl << "\t\t单词" << dic.first;
-//		show(Chinese_lst);
-//	}
-//
-//
-//	class Error :public Word
-//	{
-//	public:
-//		Error();
-//		Error(string e, string c, int t);
-//		int error_time = 0;
-
-
-//	};
-//
-//
-//	Error::Error(string e, string c, int t) :Word(e, c), error_time(t) {}
-//
-
 };
 

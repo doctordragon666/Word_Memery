@@ -12,6 +12,7 @@
 #define USER_FILE "user.txt"
 #define RECORD_FILE "record.txt"
 #define EXAM_FILE ".\\base\\exam.txt"
+#define TEXT_FILE ".\\base\\textbook.txt"
 #define TEST_FILE "test.txt"
 
 #include <iostream>

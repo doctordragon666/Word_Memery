@@ -5,8 +5,6 @@
 #include "WordBook.h"
 #include "Bookbase.h"
 
-Bookbase* base;
-
 Change::Change()
 {
 	cout << "改变词库类型" << endl;

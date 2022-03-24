@@ -74,11 +74,14 @@ void Exam::show()
 	v.push_back(translate);
 	v.push_back(write);
 	
+	
+
 	for (auto i : v)
 	{
 		for (auto j : i)
 		{
-			cout << j << endl;
+			j.showself();
 		}
+		cout << "---------------" << endl;
 	}
 }

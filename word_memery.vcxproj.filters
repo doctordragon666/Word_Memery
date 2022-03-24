@@ -66,6 +66,9 @@
     <ClCompile Include="Context.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BookWord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Manager.h">
@@ -140,6 +143,9 @@
     <ClInclude Include="Show.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BookWord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="word.txt">
@@ -161,6 +167,9 @@
       <Filter>资源文件</Filter>
     </Text>
     <Text Include="test.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="base\textbook.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>
