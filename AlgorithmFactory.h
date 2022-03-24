@@ -1,6 +1,6 @@
 #pragma once
 #include "Context.h"
-#include "Choose.h"
+#include "ChooseFactory.h"
 #include "Review.h"
 #include "Kill.h"
 #include "Show.h"
@@ -15,7 +15,7 @@ public:
 		switch (strategy)
 		{
 		case 1:
-			context = new Context(new Choose());
+			context = new Context(new ChooseFactory());
 			break;
 		case 2:
 			context = new Context(new Review());

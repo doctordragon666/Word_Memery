@@ -1,2 +1,5 @@
-test 测试 0
 name 名字 0
+choose 选择 1
+word 单词 0
+exam 考试 0
+what 什么 0

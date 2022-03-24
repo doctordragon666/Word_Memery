@@ -20,6 +20,7 @@ void menu()
 
 int main()
 {
+	srand((unsigned)time(NULL));
 	unsigned int score = 0; //初始化积分
 	//预先加载各个词库
 	Bookbase* root_base = new Bookbase();

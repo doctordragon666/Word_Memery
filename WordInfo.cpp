@@ -33,3 +33,25 @@ bool WordInfo::operator==(WordInfo& a)
 		return false;
 	}
 }
+
+string WordInfo::getc()
+{
+	return Chinese;
+}
+
+string WordInfo::gete()
+{
+	return English;
+}
+
+vector<string> WordInfo::getcl()
+{
+	vector<string> cl = split(Chinese, ';');
+	return cl;
+}
+
+WordInfo& WordInfo::operator++()
+{
+	++m_error_time;
+	return *this;//返回引用，因为每次只能对同一it相加
+}

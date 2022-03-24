@@ -1,29 +1,21 @@
-//#pragma once
-//#include <iostream>
-//#include <random>
-//#include <vector>
-//#include <fstream>
-//#include <algorithm>
-//#include <functional>
-//#include "File.h"
-//using namespace std;
-///*
-//定义全局函数的类以及一些结构，以及仿函数谓词
-//结构体：查找返回类型（序号，返回逻辑，返回对象）
-//类封装的函数
-//1.添加单词
-//2.选择题中
-//3.选择题英
-//4.默写题中
-//5.默写题英
-//6.加载文件，重载两个版本
-//7.随机函数，重载两个版本
-//8.根据数据保存格式保存到文件
-//9.打乱选择题选项。
-//10.保存记录
-//仿函数谓词
-//给不同的类型建立谓词
-//*/
+
+/*
+定义全局函数的类以及一些结构，以及仿函数谓词
+结构体：查找返回类型（序号，返回逻辑，返回对象）
+类封装的函数
+1.添加单词
+2.选择题中
+3.选择题英
+4.默写题中
+5.默写题英
+6.加载文件，重载两个版本
+7.随机函数，重载两个版本
+8.根据数据保存格式保存到文件
+9.打乱选择题选项。
+10.保存记录
+仿函数谓词
+给不同的类型建立谓词
+*/
 //
 //template<typename T>
 //struct Find_type
@@ -49,11 +41,6 @@
 //
 //class Fun
 //{
-//public:
-//	int random(int num) { return rand() % num; }
-//
-//	int random(size_t num) { return rand() % num; }
-//
 //	template<class T>
 //	void shuffle_word(vector<T>& v, size_t s, int num)
 //	{
@@ -181,139 +168,8 @@
 //		return tmp;
 //	}
 //
-//	template<class T>
-//	void choose_c(vector<T> w_lst, vector<Error> error_lst)
-//	{
-//		//根据英文选中文
-//		system("cls");
-//		int score = 0;
-//		if (w_lst.size() < 4)
-//		{
-//			cout << "\t\t请添加四个单词" << endl;
-//			return;
-//		}
-//		while (true) {
-//			vector<int> book;
-//			int t = random(w_lst.size());
-//			book.push_back(t);
-//			cout << "\t\t请选择单词“" << w_lst[t].English << "”的中文意思（输入m返回菜单）：";
 //
-//			string wer = w_lst[t].Chinese;//正确答案
-//			shuffle_word(book, w_lst.size(), 4);
-//			for (int i = 0; i < 4; i++) 
-//			{
-//				cout << "\t\t";
-//				cout.put('A' + i);
-//				cout << "." << w_lst[book[i]].Chinese << "     ";
-//			}
-//			cout << endl << "\t\t答案：";
-//			char answer;
-//			cin >> answer;
-//			if (answer == 'm') {
-//				cout << "\n\n\t\t本次总共得" << score << "分!!!\n\n\t\t";
-//				system("pause");
-//				system("cls");
-//				return;
-//			}
-//			while (true)
-//			{
-//				if (answer - 'A' >= 4 || answer - 'A' <= 0)
-//				{
-//					cout << "\n\t\t输入有误！！\n\n";
-//					cin >> answer;
-//					continue;
-//				}
-//				break;
-//			}
-//			if (w_lst[book[answer - 'A']].Chinese == wer)
-//			{
-//				cout << "\n\t\t恭喜你答对了!!!,分数：" << ++score << "\n\n\t\t" << endl;
-//			}
-//			else
-//			{
-//				cout << "\n\t\t答案错误，正确答案是：" << endl;
-//				cout << wer << endl << endl;
-//				auto error = find_word(wer, error_lst);
-//				if (error.tag)
-//					++error_lst[error.serial];
-//				else
-//					error_lst.push_back(Error(w_lst[t].English, wer, 0));
-//				save(error_lst, USER_FILE);
-//			}
-//			cout << "\n\t\t<回车下一题>";
-//			system("pause");
-//			system("cls");
-//			book.clear();
-//		}
-//	}
-//
-//	template<class T>
-//	void choose_e(vector<T> w_lst, vector<Error> error_lst)
-//	{
-//		int score = 0;
-//		//根据中文选择英文
-//		system("cls");
-//		if (w_lst.size() < 4)
-//		{
-//			system("pause");
-//			system("cls");
-//			return;
-//		}
-//		while (true) 
-//		{
-//			vector<int> book;
-//			int t = random(w_lst.size());
-//			book.push_back(t);
-//			cout << "\t\t请选择中文“" << w_lst[t].Chinese_lst[random(w_lst[t].Chinese_lst.size())] << "”的英语单词（输入m返回菜单）：";
-//
-//			string wer = w_lst[t].English;//存好答案; 
-//			//初始化选项
-//			shuffle_word(book, w_lst.size(),4);
-//			for (int i = 0; i < 4; i++) 
-//			{
-//				cout << "\t\t";
-//				cout.put('A' + i) << "." << w_lst[book[i]].English << "     ";
-//			}
-//			cout << "\n\n\t\t答案：";
-//			//输入答案
-//			char answer;
-//			cin >> answer;
-//			if (answer == 'm') {
-//				cout << "\n\n\t\t本次总共得" << score << "分!!!\n\n\t\t";
-//				system("pause");
-//				system("cls");
-//				return;
-//			}
-//			while (true)
-//			{
-//				if (answer - 'A' > 4)
-//				{
-//					cout << "\n\t\t输入有误！！\n\n";
-//					cin >> answer;
-//					continue;
-//				}
-//				break;
-//			}
-//			if (w_lst[book[answer - 'A']].English == wer)
-//			{
-//				cout << "\n\t\t恭喜你答对了!!!,分数：" << ++score << "\n\n\t\t";
-//			}
-//			else
-//			{
-//				cout << "\n\t\t\a答案错误，正确答案是：" << wer << endl;
-//				auto error = find_word(wer, error_lst);
-//				if (error.tag)
-//					++error_lst[error.serial];
-//				else
-//					error_lst.push_back(Error(w_lst[t].English, wer, 0));
-//				save(error_lst, USER_FILE);
-//			}
-//			cout << "\n\t\t<回车下一题>";
-//			system("pause");
-//			system("cls");
-//			book.clear();
-//		}
-//	}
+
 //
 //	template<class T>
 //	void dictation_c(vector<T> w_lst, vector<Error> error_lst)

@@ -145,6 +145,7 @@
     <ClCompile Include="Change.cpp" />
     <ClCompile Include="Choose.cpp" />
     <ClCompile Include="ChooseC.cpp" />
+    <ClCompile Include="ChooseE.cpp" />
     <ClCompile Include="Context.cpp" />
     <ClCompile Include="Exam.cpp" />
     <ClCompile Include="ExamWord.cpp" />
@@ -166,6 +167,8 @@
     <ClInclude Include="Change.h" />
     <ClInclude Include="Choose.h" />
     <ClInclude Include="ChooseC.h" />
+    <ClInclude Include="ChooseE.h" />
+    <ClInclude Include="ChooseFactory.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="Exam.h" />

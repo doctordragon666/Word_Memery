@@ -24,14 +24,13 @@ class WordInfo
 public:
 	virtual void showself();
 	WordInfo();
-	WordInfo& operator++()
-	{
-		++m_error_time;
-		return *this;//返回引用，因为每次只能对同一it相加
-	}
+	WordInfo& operator++();
 	friend ostream& operator<<(ostream& out, WordInfo& w);
 	friend istream& operator>>(istream& in, WordInfo& w);
 	bool operator==(WordInfo& a);
+	string gete();
+	string getc();
+	vector<string> getcl();
 protected:
 	int m_error_time;
 	string Chinese;

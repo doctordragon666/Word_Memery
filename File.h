@@ -21,12 +21,41 @@
 #include <fstream>
 #include <map>
 #include <algorithm>
+#include <stdlib.h>
+#include <random>
+#include <ctime>
 using namespace std;
 
 inline bool isrange(int choose)
 {
 	return choose <= 7 && choose >= 0;
 }
+
+inline int random(size_t num)
+{
+	return rand() % num;
+}
+
+inline int random(int num)
+{
+	return rand() % num;
+}
+
+//	template<class T>
+//	void shuffle_word(vector<T>& v, size_t s, int num)
+//	{
+//		//将该数组打乱并且返回若干个数组中的元素
+//		while (v.size() < num)
+//		{
+//			int tmp = random(s);
+//			if (find(v.begin(), v.end(), tmp) == v.end())
+//			{
+//				v.push_back(tmp);
+//			}
+//		}
+//		random_shuffle(v.begin(), v.end());
+//		cout << endl << endl;
+//	}
 
 inline vector<string> split(string& s, char c)
 {

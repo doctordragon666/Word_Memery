@@ -47,3 +47,8 @@ void Bookbase::show()
 		cout << i;
 	}
 }
+
+void Bookbase::save(vector<WordInfo> v)
+{
+	m_word = v;
+}

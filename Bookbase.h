@@ -9,6 +9,8 @@ public:
 	~Bookbase();
 	virtual void show();
 	vector<WordInfo> getword();
+	const int type = 0;
+	virtual void save(vector<WordInfo> v);
 protected:
 	vector<WordInfo> m_word;
 };
