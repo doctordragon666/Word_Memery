@@ -12,6 +12,7 @@ public:
 	void ContextInterface(unsigned int& score)
 	{
 		score += m_strategy->AlgorithmInterface(&global_b);//调用算法接口，然后获取返回值
+		cout << "算法调用" << endl;
 	}
 	void setbase(Bookbase* b);
 	~Context();

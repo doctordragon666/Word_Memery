@@ -2,6 +2,7 @@
 #include "Strategy.h"
 #include "File.h"
 #include "WordInfo.h"
+#include "Exam.h"
 class Show :
     public Strategy
 {

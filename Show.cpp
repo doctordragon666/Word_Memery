@@ -13,13 +13,7 @@ int Show::AlgorithmInterface(Bookbase** global_b)
 		cout << "请重试" << endl;
 		return 0;
 	}
-	vector<WordInfo> v = (*global_b)->getword();
-	if (v.size() != 0)
-	{
-		for (vector<WordInfo>::iterator it = v.begin(); it != v.end(); it++)
-		{
-			cout << (*it);
-		}
-	}
+	(*global_b)->show();
+	cout << "显示算法调用" << endl;
 	return 0;
 }

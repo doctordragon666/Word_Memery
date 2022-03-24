@@ -19,5 +19,5 @@ istream& operator>>(istream& in, WordInfo& w)
 
 void WordInfo::showself()
 {
-	cout <<"错误的次数"<< m_error_time<<"来源" << source;
+	cout << English << Chinese << endl;
 }

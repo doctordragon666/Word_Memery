@@ -9,6 +9,7 @@ Context::Context(Strategy* strategy)
 void Context::setbase(Bookbase* b)
 {
 	global_b = b;
+	cout << "设置数据库完毕" << endl;
 }
 
 Context::~Context()

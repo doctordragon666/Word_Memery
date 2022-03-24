@@ -24,39 +24,29 @@ class WordInfo
 public:
 	virtual void showself();
 	WordInfo();
+	WordInfo& operator++()
+	{
+		++m_error_time;
+		return *this;//返回引用，因为每次只能对同一it相加
+	}
 	friend ostream& operator<<(ostream& out, WordInfo& w);
 	friend istream& operator>>(istream& in, WordInfo& w);
+	bool operator==(WordInfo& a)  
+	{
+		if (a.English == this->English)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}//重载等号用于去重复
 protected:
 	int m_error_time;
 	string Chinese;
 	string English;
-	string source;//来源
-//	vector<string> split(string& s, char c)
-//	{
-//		vector<string> v;
-//		string behind;
-//		string end = s;
-//		while (end != "")
-//		{
-//			size_t pos = end.find(c);
-//			if (pos != -1)
-//			{
-//				behind = end.substr(0, pos);
-//				if (behind != "")
-//				{
-//					v.push_back(behind);
-//				}
-//				end = end.substr(pos + 1, s.size());
-//			}
-//			else
-//			{
-//				v.push_back(end);
-//				break;
-//			}
-//		}
-//		return v;
-//	}
-//
+
 //	class Word
 //	{
 //	public:
@@ -64,7 +54,6 @@ protected:
 //		Word(string e, string c);
 //		void show(vector<string> v);
 //		void show();
-//		friend ostream& operator <<(ostream& out, Word w);
 //		string Chinese;
 //		string English;
 //		pair<string, string> dic;
@@ -82,7 +71,6 @@ protected:
 //		}
 //	};
 //
-//	Word::Word() {}
 //
 //	Word::Word(string e, string c)
 //	{
@@ -107,11 +95,6 @@ protected:
 //		show(Chinese_lst);
 //	}
 //
-//	ostream& operator <<(ostream& out, Word w)
-//	{
-//		out << w.English << " " << w.Chinese;
-//		return out;
-//	}
 //
 //	class Error :public Word
 //	{
@@ -119,25 +102,10 @@ protected:
 //		Error();
 //		Error(string e, string c, int t);
 //		int error_time = 0;
-//		Error& operator++()
-//		{
-//			++error_time;
-//			return *this;//返回引用，因为每次只能对同一it相加
-//		}
-//		bool operator==(Error& a)
-//		{
-//			if (a.English == this->English)
-//			{
-//				return true;
-//			}
-//			else
-//			{
-//				return false;
-//			}
-//		}
+
+
 //	};
 //
-//	Error::Error() {}
 //
 //	Error::Error(string e, string c, int t) :Word(e, c), error_time(t) {}
 //

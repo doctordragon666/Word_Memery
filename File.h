@@ -18,6 +18,8 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <map>
+#include <algorithm>
 using namespace std;
 
 inline bool isrange(int choose)
