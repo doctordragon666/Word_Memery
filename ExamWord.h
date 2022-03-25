@@ -7,6 +7,7 @@ class ExamWord :
 public:
 	void showself();
 	ExamWord();
+	ExamWord(WordInfo w, string s);
 	string getsource();
 	ExamWord& operator++();
 	friend ostream& operator<<(ostream& out, ExamWord& w);

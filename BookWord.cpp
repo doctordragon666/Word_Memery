@@ -11,6 +11,21 @@ BookWord::BookWord()
 	unit = 0;
 }
 
+BookWord::BookWord(WordInfo w, string s)
+{
+	vector<string> tmp = split(s, ' ');
+	if (tmp.size() < 2)
+	{
+		cout << "参数传递有误，请重启程序";
+		exit(0);
+	}
+	this->book = tmp[0];
+	this->unit = stoi(tmp[1]);
+	this->Chinese = w.getc();
+	this->English = w.gete();
+	this->m_error_time = w.gettime();
+}
+
 BookWord& BookWord::operator++()
 {
 	++m_error_time;

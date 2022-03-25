@@ -42,7 +42,24 @@ void WordBook::show()
 	}
 }
 
-vector<BookWord> WordBook::getword()
+vector<pair<WordInfo, string>> WordBook::getword()
 {
-	return m_word;
+	vector<pair<WordInfo, string>> v;
+	WordInfo w;
+	for (auto i : m_word)
+	{
+		w = i;
+		v.push_back(make_pair(w, i.getbook() + " " + to_string(i.getunit())));
+	}
+	return v;
+}
+
+void WordBook::save(vector<pair<WordInfo, string>> v)
+{
+	m_word.clear();
+	for (auto i : v)
+	{
+		BookWord bw(i.first, i.second);
+		m_word.push_back(bw);
+	}
 }

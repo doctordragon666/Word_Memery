@@ -2,7 +2,7 @@
 
 int Kill::AlgorithmInterface(Bookbase** global_b)
 {
-	vector<WordInfo> v = (*global_b)->getword();
+	vector<pair<WordInfo, string>> v = (*global_b)->getword();
 	size_t i = 0;
 	if (v.size() == 0)
 	{
@@ -10,7 +10,7 @@ int Kill::AlgorithmInterface(Bookbase** global_b)
 	}
 	while (true)
 	{
-		v[i].showself();
+		v[i].first.showself();
 		cout << endl << "是否要删掉这个单词K,返回上一级A, 退出按M: \t";
 		char c = 'D';
 		cin >> c;

@@ -149,7 +149,6 @@
     <ClCompile Include="Context.cpp" />
     <ClCompile Include="Exam.cpp" />
     <ClCompile Include="ExamWord.cpp" />
-    <ClCompile Include="Init.cpp" />
     <ClCompile Include="Kill.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Memery.cpp" />
@@ -158,6 +157,7 @@
     <ClCompile Include="Show.cpp" />
     <ClCompile Include="WordBook.cpp" />
     <ClCompile Include="WordInfo.cpp" />
+    <ClCompile Include="Xing.cpp" />
     <ClCompile Include="Xinghuo.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -175,18 +175,16 @@
     <ClInclude Include="ExamWord.h" />
     <ClInclude Include="File.h" />
     <ClInclude Include="Function.h" />
-    <ClInclude Include="Init.h" />
     <ClInclude Include="Kill.h" />
-    <ClInclude Include="Manager.h" />
     <ClInclude Include="Memery.h" />
     <ClInclude Include="Record.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Review.h" />
     <ClInclude Include="Show.h" />
     <ClInclude Include="Strategy.h" />
-    <ClInclude Include="User.h" />
     <ClInclude Include="WordBook.h" />
     <ClInclude Include="WordInfo.h" />
+    <ClInclude Include="Xing.h" />
     <ClInclude Include="Xinghuo.h" />
   </ItemGroup>
   <ItemGroup>

@@ -30,6 +30,7 @@ public:
 	bool operator==(WordInfo& a);
 	string gete();
 	string getc();
+	int gettime();
 	vector<string> getcl();
 protected:
 	int m_error_time;

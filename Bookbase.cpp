@@ -18,9 +18,14 @@ Bookbase::Bookbase()
 	ifs.close();
 }
 
-vector<WordInfo> Bookbase::getword()
+vector<pair<WordInfo, string>> Bookbase::getword()
 {
-	return m_word;
+	vector<pair<WordInfo, string>> v;
+	for (auto i : m_word)
+	{
+		v.push_back(make_pair(i, ""));
+	}
+	return v;
 }
 
 Bookbase::~Bookbase()
@@ -48,7 +53,11 @@ void Bookbase::show()
 	}
 }
 
-void Bookbase::save(vector<WordInfo> v)
+void Bookbase::save(vector<pair<WordInfo, string>> v)
 {
-	m_word = v;
+	m_word.clear();
+	for (auto i : v)
+	{
+		m_word.push_back(i.first);
+	}
 }

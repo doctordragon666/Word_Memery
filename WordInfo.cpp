@@ -55,3 +55,8 @@ WordInfo& WordInfo::operator++()
 	++m_error_time;
 	return *this;//返回引用，因为每次只能对同一it相加
 }
+
+int WordInfo::gettime()
+{
+	return m_error_time;
+}

@@ -6,6 +6,7 @@ class BookWord :
 public:
 	void showself();
 	BookWord();
+	BookWord(WordInfo w, string s);
 	BookWord& operator++();
 	friend ostream& operator<<(ostream& out, BookWord& w);
 	friend istream& operator>>(istream& in, BookWord& w);

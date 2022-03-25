@@ -1,4 +1,5 @@
 #include "Exam.h"
+
 Exam::Exam()
 {
 	cout << "¿¼ÊÔ¿â¿ªÊ¼¼ÓÔØ" << endl;
@@ -33,9 +34,26 @@ Exam::~Exam()
 	this->m_word.clear();
 }
 
-vector<ExamWord> Exam::getexam()
+vector<pair<WordInfo, string>> Exam::getword()
 {
-	return this->m_word;
+	vector<pair<WordInfo, string>> v;
+	WordInfo w;
+	for (auto i : m_word)
+	{
+		w = i;
+		v.push_back(make_pair(i, i.getsource()));
+	}
+	return v;
+}
+
+void Exam::save(vector<pair<WordInfo, string>> v)
+{
+	m_word.clear();
+	for (auto i : v)
+	{
+		ExamWord ew(i.first, i.second);
+		m_word.push_back(ew);
+	}
 }
 
 void Exam::show()

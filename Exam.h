@@ -7,7 +7,9 @@ class Exam :
 public:
     Exam();
     ~Exam();
-    vector<ExamWord> getexam();
+    vector<pair<WordInfo, string>> getword();
+    const int type = 2;
+    void save(vector<pair<WordInfo, string>> v);
     void show();
 private:
     vector<ExamWord> m_word;

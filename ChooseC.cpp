@@ -2,7 +2,7 @@
 
 int ChooseC::ChooseInterface(Bookbase** global_b)
 {
-	vector<WordInfo> v = (*global_b)->getword();
+	vector<pair<WordInfo, string>> v = (*global_b)->getword();
 	//根据英文选中文
 	system("cls");
 	int score = 0;
@@ -15,15 +15,15 @@ int ChooseC::ChooseInterface(Bookbase** global_b)
 		vector<int> book;
 		int t = random(v.size());
 		book.push_back(t);
-		cout << "\t\t请选择单词“" << v[t].gete() << "”的中文意思（输入M返回菜单）：";
+		cout << "\t\t请选择单词“" << v[t].first.gete() << "”的中文意思（输入M返回菜单）：";
 
-		string wer = v[t].getc();//正确答案
+		string wer = v[t].first.getc();//正确答案
 		shuffle_word(book, v.size(), 4);
 		for (int i = 0; i < 4; i++) 
 		{
 			cout << "\t\t";
 			cout.put('A' + i);
-			cout << "." << v[book[i]].getc() << "     ";
+			cout << "." << v[book[i]].first.getc() << "     ";
 		}
 		cout << endl << "\t\t答案：";
 		char answer;
@@ -45,7 +45,7 @@ int ChooseC::ChooseInterface(Bookbase** global_b)
 			}
 			break;
 		}
-		if (v[book[answer - 'A']].getc() == wer)
+		if (v[book[answer - 'A']].first.getc() == wer)
 		{
 			cout << "\n\t\t恭喜你答对了!!!,分数：" << ++score << "\n\n\t\t" << endl;
 		}
@@ -53,7 +53,7 @@ int ChooseC::ChooseInterface(Bookbase** global_b)
 		{
 			cout << "\n\t\t答案错误，正确答案是：" << endl;
 			cout << wer << endl << endl;
-			++v[t];
+			++v[t].first;
 		}
 		cout << "\n\t\t<回车下一题>";
 		system("pause");

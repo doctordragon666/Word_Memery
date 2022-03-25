@@ -54,9 +54,6 @@
     <ClCompile Include="ExamWord.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Init.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Change.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -72,18 +69,15 @@
     <ClCompile Include="ChooseE.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Xing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Manager.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Function.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="File.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="User.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
@@ -137,9 +131,6 @@
     <ClInclude Include="ExamWord.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Init.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Change.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -153,6 +144,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ChooseE.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Xing.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

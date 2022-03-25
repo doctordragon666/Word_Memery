@@ -9,6 +9,14 @@ ExamWord::ExamWord()
 {
 }
 
+ExamWord::ExamWord(WordInfo w, string s)
+{
+	this->Chinese = w.getc();
+	this->English = w.gete();
+	this->m_error_time = w.gettime();
+	this->source = s;
+}
+
 ExamWord& ExamWord::operator++()
 {
 	++m_error_time;
