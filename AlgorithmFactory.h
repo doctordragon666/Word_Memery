@@ -5,6 +5,7 @@
 #include "Kill.h"
 #include "Show.h"
 #include "Change.h"
+#include "Memery.h"
 class AlgorithmFactory
 {
 public:
@@ -28,6 +29,9 @@ public:
 			break;
 		case 5:
 			context = new Context(new Change());
+			break;
+		case 6:
+			context = new Context(new Memery());
 			break;
 		default:
 			break;

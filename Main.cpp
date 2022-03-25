@@ -14,6 +14,8 @@ void menu()
 	cout << "||\t\t3.斩词" << endl;
 	cout << "||\t\t4.查看记录" << endl;
 	cout << "||\t\t5.更换词库" << endl;
+	cout << "||\t\t5.记忆模式" << endl;
+	cout << "||\t\t5.修改模式" << endl;
 	cout << "||\t\t0.退出系统" << endl;
 	cout << "||\t\t         请输入你的选择：_________\b\b\b\b\b\b";
 }

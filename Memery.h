@@ -3,5 +3,7 @@
 class Memery :
     public Strategy
 {
+public:
+    int AlgorithmInterface(Bookbase** global_b);
 };
 
