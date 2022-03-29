@@ -26,13 +26,14 @@ convention 大会 0
 dim 昏暗 0
 heap 堆 0
 mortgage 抵押 0
-craft ...的工艺/制作 1
+trifle 琐事/少量/怠慢 0
 shift 转移/改变/当班时间/转变 1
 assault 袭击 1
 reserve 预留空间 1
 aid 援助/辅助物品/帮助 1
 September 九月 1
 omitted 省略 1
+craft ...的工艺/制作 1
 assign 赋值 3
 shift 转移/改变/当班时间/转变 3
 hollow 中空的/虚假的/洼地 4

@@ -37,6 +37,11 @@ hollow 中空的/虚假的/洼地
 horn 喇叭/角制品
 idle 清闲的/懒散的/虚度
 indifferent 不在乎的/一般的
+intact 未损坏的
+integar 整数
+integral 基本的
+integrate 结合的
+integrity 完全
 inward 向中心的/内心的
 lamp 灯
 lens 镜头
@@ -53,6 +58,7 @@ omitted 省略
 overtake 赶上/突然降临
 overwhelm 使不知所措/使应接不暇/彻底击败
 pit 坑/煤矿井
+premise 前提
 rally 集合/重新振作/集会
 realm 领域
 refrain 抑制
@@ -68,6 +74,9 @@ set 设置/放置/组/套装/片场/演出/准备好了的/固定不变的
 shift 转移/改变/当班时间/转变
 speculate 推测
 steer 操纵/引导/驾驶
+tackless 不乖巧的
+tact 得体
+teilight 黄昏
 terrific 极好的
 therapy 治疗
 this 这个
@@ -76,4 +85,5 @@ time 时间/次数
 trifle 琐事/少量/怠慢
 underline 下划线/重点
 undertale 传说之下
+veil 面纱
 veteran 老兵/经验丰富的人

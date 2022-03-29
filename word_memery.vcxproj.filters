@@ -72,6 +72,30 @@
     <ClCompile Include="Xing.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MulChoose.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Modify.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Del.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Revise.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SQL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ModifyFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Function.h">
@@ -147,6 +171,30 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Xing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MulChoose.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Search.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Modify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Add.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Del.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Revise.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SQL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ModifyFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

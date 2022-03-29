@@ -28,7 +28,7 @@ using namespace std;
 
 inline bool isrange(int choose)
 {
-	return choose <= 7 && choose >= 0;
+	return choose <= 8 && choose >= 0;
 }
 
 inline int random(size_t num)

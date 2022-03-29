@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Add.cpp" />
     <ClCompile Include="Bookbase.cpp" />
     <ClCompile Include="BookWord.cpp" />
     <ClCompile Include="Change.cpp" />
@@ -147,20 +148,28 @@
     <ClCompile Include="ChooseC.cpp" />
     <ClCompile Include="ChooseE.cpp" />
     <ClCompile Include="Context.cpp" />
+    <ClCompile Include="Del.cpp" />
     <ClCompile Include="Exam.cpp" />
     <ClCompile Include="ExamWord.cpp" />
     <ClCompile Include="Kill.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Memery.cpp" />
+    <ClCompile Include="Modify.cpp" />
+    <ClCompile Include="ModifyFactory.cpp" />
+    <ClCompile Include="MulChoose.cpp" />
     <ClCompile Include="Record.cpp" />
     <ClCompile Include="Review.cpp" />
+    <ClCompile Include="Revise.cpp" />
+    <ClCompile Include="Search.cpp" />
     <ClCompile Include="Show.cpp" />
+    <ClCompile Include="SQL.cpp" />
     <ClCompile Include="WordBook.cpp" />
     <ClCompile Include="WordInfo.cpp" />
     <ClCompile Include="Xing.cpp" />
     <ClCompile Include="Xinghuo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Add.h" />
     <ClInclude Include="AlgorithmFactory.h" />
     <ClInclude Include="Bookbase.h" />
     <ClInclude Include="BookWord.h" />
@@ -171,16 +180,23 @@
     <ClInclude Include="ChooseFactory.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Context.h" />
+    <ClInclude Include="Del.h" />
     <ClInclude Include="Exam.h" />
     <ClInclude Include="ExamWord.h" />
     <ClInclude Include="File.h" />
     <ClInclude Include="Function.h" />
     <ClInclude Include="Kill.h" />
     <ClInclude Include="Memery.h" />
+    <ClInclude Include="Modify.h" />
+    <ClInclude Include="ModifyFactory.h" />
+    <ClInclude Include="MulChoose.h" />
     <ClInclude Include="Record.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Review.h" />
+    <ClInclude Include="Revise.h" />
+    <ClInclude Include="Search.h" />
     <ClInclude Include="Show.h" />
+    <ClInclude Include="SQL.h" />
     <ClInclude Include="Strategy.h" />
     <ClInclude Include="WordBook.h" />
     <ClInclude Include="WordInfo.h" />

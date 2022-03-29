@@ -6,6 +6,8 @@
 #include "Show.h"
 #include "Change.h"
 #include "Memery.h"
+#include "Search.h"
+
 class AlgorithmFactory
 {
 public:
@@ -32,6 +34,9 @@ public:
 			break;
 		case 6:
 			context = new Context(new Memery());
+			break;
+		case 8:
+			context = new Context(new Search());
 			break;
 		default:
 			break;
