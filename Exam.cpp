@@ -32,6 +32,7 @@ Exam::~Exam()
 	}
 	ofs.close();
 	this->m_word.clear();
+	cout << "exam¿¼ÊÔÌâ¿âÒÑ¾­É¾³ý";
 }
 
 vector<pair<WordInfo, string>> Exam::getword()
@@ -62,6 +63,7 @@ void Exam::show()
 	vector<ExamWord> passage;
 	vector<ExamWord> translate;
 	vector<ExamWord> write;
+	string s[4] = {"listen", "passage", "translate", "write"};
 	for (auto i : m_word)
 	{
 		if (i.getsource() == "listen")
@@ -92,14 +94,21 @@ void Exam::show()
 	v.push_back(translate);
 	v.push_back(write);
 	
-	
+	int type_num = 0;
 
 	for (auto i : v)
 	{
+		cout << s[type_num++] << endl;
 		for (auto j : i)
 		{
 			j.showself();
 		}
 		cout << "---------------" << endl;
 	}
+}
+
+
+void Exam::example()
+{
+	cout << "Ó¢Óï¿Õ¸ñººÓï¿Õ¸ñÀ´Ô´" << endl;
 }

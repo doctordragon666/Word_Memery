@@ -9,6 +9,7 @@ public:
     ~Exam();
     vector<pair<WordInfo, string>> getword();
     const int type = 2;
+    void example();
     void save(vector<pair<WordInfo, string>> v);
     void show();
 private:

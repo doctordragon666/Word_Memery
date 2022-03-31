@@ -8,5 +8,10 @@ assemble 集合 0
 assembly 会议 0
 assert 断言 0
 assess 评价 0
-asset 天赋 0
+asset 天赋 1
 assign 赋值 0
+revise 修改 0
+gender 性别 0
+name 姓名 0
+Chinese 中文 0
+name sasd 0

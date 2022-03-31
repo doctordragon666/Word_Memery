@@ -24,6 +24,7 @@ class WordInfo
 public:
 	virtual void showself();
 	WordInfo();
+	WordInfo(string e, string c);
 	WordInfo& operator++();
 	friend ostream& operator<<(ostream& out, WordInfo& w);
 	friend istream& operator>>(istream& in, WordInfo& w);

@@ -47,9 +47,10 @@ Bookbase::~Bookbase()
 void Bookbase::show()
 {
 	cout << "总书库显示" << endl;
+	int row_num = 0;
 	for (auto i : m_word)
 	{
-		cout << i;
+		cout << ++row_num << i;
 	}
 }
 
@@ -60,4 +61,9 @@ void Bookbase::save(vector<pair<WordInfo, string>> v)
 	{
 		m_word.push_back(i.first);
 	}
+}
+
+void Bookbase::example()
+{
+	cout << "词库示例： 中文空格英文" << endl;
 }

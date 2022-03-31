@@ -3,5 +3,7 @@
 class Add :
     public Modify
 {
+public:
+    bool ModifyAlgorithm(Bookbase** global_b);
 };
 

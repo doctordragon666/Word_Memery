@@ -13,6 +13,18 @@ Record::Record(unsigned int score)
 	delete nowtime;
 }
 
+Record::Record(string s)
+{
+	this->error = s;
+	time_t now = time(NULL);
+	struct tm* nowtime = new tm();
+	localtime_s(nowtime, &now);
+
+	this->m_date = to_string(nowtime->tm_year + 1900) + ":" + to_string(nowtime->tm_mon + 1) + ":" + to_string(nowtime->tm_mday)
+		+ " " + to_string(nowtime->tm_hour) + ":" + to_string(nowtime->tm_min) + ":" + to_string(nowtime->tm_sec);
+	delete nowtime;
+}
+
 void Record::Save()
 {
 	ofstream ofs(RECORD_FILE, ios::app);
@@ -34,10 +46,17 @@ void Record::SetScore(unsigned int score)
 	m_score = score;
 }
 
-std::ostream& operator<<(std::ostream& in, Record r)
+std::ostream& operator<<(std::ostream& out, Record r)
 {
-	in << r.m_date << "\t" << r.m_score << "\n";
-	return in;
+	if (r.error != "")
+	{
+		out << r.m_date << "\t" << r.m_score << "\n";
+	}
+	else
+	{
+		out << r.m_date << "\t" << r.error << "\n";
+	}
+	return out;
 }
 
 std::istream& operator>>(std::istream& in, Record r)

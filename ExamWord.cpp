@@ -7,6 +7,7 @@ void ExamWord::showself()
 
 ExamWord::ExamWord()
 {
+	m_error_time = 0;
 }
 
 ExamWord::ExamWord(WordInfo w, string s)

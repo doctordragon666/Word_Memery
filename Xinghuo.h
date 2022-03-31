@@ -9,7 +9,8 @@ public:
     //~Xinghuo();
     //void show();
     //virtual vector<pair<WordInfo, string>> getword();
-    //const int type = 1;
+    const int type = 3;
+    //const string exmaple = "中文， 英文， 组";
     //void save(vector<pair<WordInfo, string>> v);
     //记忆模式
     //读取自己的文件

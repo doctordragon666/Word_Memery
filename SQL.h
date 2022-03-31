@@ -3,5 +3,7 @@
 class SQL :
     public Modify
 {
+public:
+    bool ModifyAlgorithm(Bookbase** global_b);
 };
 
