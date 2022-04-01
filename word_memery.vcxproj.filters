@@ -96,6 +96,12 @@
     <ClCompile Include="ModifyFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DictationC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DictationE.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Function.h">
@@ -195,6 +201,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ModifyFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dictation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DictationC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DictationE.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

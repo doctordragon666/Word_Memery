@@ -149,6 +149,8 @@
     <ClCompile Include="ChooseE.cpp" />
     <ClCompile Include="Context.cpp" />
     <ClCompile Include="Del.cpp" />
+    <ClCompile Include="DictationC.cpp" />
+    <ClCompile Include="DictationE.cpp" />
     <ClCompile Include="Exam.cpp" />
     <ClCompile Include="ExamWord.cpp" />
     <ClCompile Include="Kill.cpp" />
@@ -181,6 +183,9 @@
     <ClInclude Include="Config.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="Del.h" />
+    <ClInclude Include="Dictation.h" />
+    <ClInclude Include="DictationC.h" />
+    <ClInclude Include="DictationE.h" />
     <ClInclude Include="Exam.h" />
     <ClInclude Include="ExamWord.h" />
     <ClInclude Include="File.h" />

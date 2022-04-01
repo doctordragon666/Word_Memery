@@ -21,7 +21,7 @@ int Kill::AlgorithmInterface(Bookbase** global_b)
 			i++;
 			break;
 		case 'A':
-			if (i!=1)
+			if (i != 1 && i != 0)
 			{
 				i--;
 			}

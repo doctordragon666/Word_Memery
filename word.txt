@@ -1,89 +1,89 @@
-September 九月
-aid 援助/辅助物品/帮助
-algorithm 算法
-assault 袭击
-assemble 集合
-assembly 会议
-assert 断言
-assess 评价
-asset 天赋
-assign 赋值
-assignment 作业
-assimilate 吸收
-auditorium 听众席
-auto 汽车/自动
-bang 猛击
-blueprint 蓝图/方案
-bold 大胆的/冒失的/醒目的/粗体的
-bully 公牛/欺负
-commodity 商品/货物
-commonplace 平凡的/常见的事务
-convention 大会
-convert 转化
-craft ...的工艺/制作
-crown 王位/加冕/桂冠
-decent 规矩的
-deputy 副手/代言人/议员
-diagram 图解
-dim 昏暗
-dip 下降/减少/浸
-downtown 商业区的/在商业区的
-expend 花费
-fatigue 疲劳
-heap 堆
-hedge 树篱/障碍物
-hoax 骗局
-hollow 中空的/虚假的/洼地
-horn 喇叭/角制品
-idle 清闲的/懒散的/虚度
-indifferent 不在乎的/一般的
-intact 未损坏的
-integar 整数
-integral 基本的
-integrate 结合的
-integrity 完全
-inward 向中心的/内心的
-lamp 灯
-lens 镜头
-like 点赞
-lot 抽签/拍卖品/许多
-manager 管理
-merit 长处
-mortgage 抵押
-mould 模子
-municipal 市政的
-mutual 共同的/相互的
-nonsense 胡说/废话
-omitted 省略
-overtake 赶上/突然降临
-overwhelm 使不知所措/使应接不暇/彻底击败
-pit 坑/煤矿井
-premise 前提
-rally 集合/重新振作/集会
-realm 领域
-refrain 抑制
-render 使变为
-reserve 预留空间
-run 逃跑/运行/竞选/一段时期
-scatter 散开/撒
-school 学校/学派
-sector 部门
-seed 种子
-seize 抓住
-set 设置/放置/组/套装/片场/演出/准备好了的/固定不变的
-shift 转移/改变/当班时间/转变
-speculate 推测
-steer 操纵/引导/驾驶
-tackless 不乖巧的
-tact 得体
-teilight 黄昏
-terrific 极好的
-therapy 治疗
-this 这个
-thrive 欣欣向荣/兴旺
-time 时间/次数
-trifle 琐事/少量/怠慢
-underline 下划线/重点
-undertale 传说之下
-veil 面纱
-veteran 老兵/经验丰富的人
+September 九月 0
+aid 援助;辅助物品;帮助 0
+algorithm 算法 0
+assault 袭击 0
+assemble 集合 0
+assembly 会议 0
+assert 断言 0
+assess 评价 0
+asset 天赋 0
+assign 赋值 0
+assignment 作业 0
+assimilate 吸收 0
+auditorium 听众席 0
+auto 汽车;自动 0
+bang 猛击 0
+blueprint 蓝图;方案 0
+bold 大胆的;冒失的;醒目的;粗体的 0
+bully 公牛;欺负 0
+commodity 商品;货物 0
+commonplace 平凡的;常见的事务 0
+convention 大会 0
+convert 转化 0
+craft ...的工艺;制作 0
+crown 王位;加冕;桂冠 0
+decent 规矩的 0
+deputy 副手;代言人;议员 0
+diagram 图解 0
+dim 昏暗 0
+dip 下降;减少;浸 0
+downtown 商业区的;在商业区的 0
+expend 花费 0
+fatigue 疲劳 0
+heap 堆 0
+hedge 树篱;障碍物 0
+hoax 骗局 0
+hollow 中空的;虚假的;洼地 0
+horn 喇叭;角制品 0
+idle 清闲的;懒散的;虚度 0
+indifferent 不在乎的;一般的 0
+intact 未损坏的 0
+integar 整数 0
+integral 基本的 0
+integrate 结合的 0
+integrity 完全 0
+inward 向中心的;内心的 0
+lamp 灯 0
+lens 镜头 0
+like 点赞 0
+lot 抽签;拍卖品;许多 0
+manager 管理 0
+merit 长处 0
+mortgage 抵押 0
+mould 模子 0
+municipal 市政的 0
+mutual 共同的;相互的 0
+nonsense 胡说;废话 0
+omitted 省略 0
+overtake 赶上;突然降临 0
+overwhelm 使不知所措;使应接不暇;彻底击败 0
+pit 坑;煤矿井 0
+premise 前提 0
+rally 集合;重新振作;集会 0
+realm 领域 0
+refrain 抑制 0
+render 使变为 0
+reserve 预留空间 0
+run 逃跑;运行;竞选;一段时期 0
+scatter 散开;撒 0
+school 学校;学派 0
+sector 部门 0
+seed 种子 0
+seize 抓住 0
+set 设置;放置;组;套装;片场;演出;准备好了的;固定不变的 0
+shift 转移;改变;当班时间;转变 0
+speculate 推测 0
+steer 操纵;引导;驾驶 0
+tackless 不乖巧的 0
+tact 得体 0
+teilight 黄昏 0
+terrific 极好的 0
+therapy 治疗 0
+this 这个 0
+thrive 欣欣向荣;兴旺 0
+time 时间;次数 0
+trifle 琐事;少量;怠慢 0
+underline 下划线;重点 0
+undertale 传说之下 0
+veil 面纱 0
+veteran 老兵;经验丰富的人 0

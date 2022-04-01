@@ -31,6 +31,10 @@ int MulChoose::ChooseInterface(Bookbase** global_b)
 		{
 			cout << "\t\t";
 			cout.put('A' + i) << "." << w_lst[book[i]].first.gete() << "     ";
+			if (i%4==0)
+			{
+				cout << endl;
+			}
 		}
 		cout << "\n\n\t\t´ð°¸£º";
 		//ÊäÈë´ð°¸

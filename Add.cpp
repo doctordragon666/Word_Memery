@@ -2,6 +2,7 @@
 
 bool Add::ModifyAlgorithm(Bookbase** global_b)
 {
+	system("cls");
 	vector<pair<WordInfo, string>> target = (*global_b)->getword();
 	cout << "请输入添加的单词信息， 示例如下" << endl;
 	(*global_b)->example();

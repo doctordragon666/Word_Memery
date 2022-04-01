@@ -16,6 +16,7 @@ Bookbase::Bookbase()
 		this->m_word.push_back(w);
 	}
 	ifs.close();
+	system("cls");
 }
 
 vector<pair<WordInfo, string>> Bookbase::getword()
@@ -50,7 +51,7 @@ void Bookbase::show()
 	int row_num = 0;
 	for (auto i : m_word)
 	{
-		cout << ++row_num << i;
+		cout << ++row_num << "  " << i;
 	}
 }
 

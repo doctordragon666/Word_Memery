@@ -3,13 +3,18 @@
 int ModifyFactory::AlgorithmInterface(Bookbase** global_b)
 {
 	Modify* mod = new Modify();
-	cout << "请选择模式" << endl;
+	cout << "请选择模式-1结束" << endl;
 	cout << "1.增加" << endl;
 	cout << "2.删除" << endl;
 	cout << "3.修改" << endl;
 	cout << "4.SQL" << endl;
 	int choose = 0;
 	cin >> choose;
+
+	if (choose == -1)
+	{
+		return 0;
+	}
 
 	switch (choose)
 	{

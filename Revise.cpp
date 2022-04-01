@@ -36,8 +36,7 @@ bool Revise::ModifyAlgorithm(Bookbase** global_b)
 
 		if (flag)
 		{
-			cin >> noskipws >> s;
-			cin >> skipws;
+			cin >> s;
 		}
 
 		WordInfo w(e, c);
