@@ -23,6 +23,7 @@ Record::Record(string s)
 	this->m_date = to_string(nowtime->tm_year + 1900) + ":" + to_string(nowtime->tm_mon + 1) + ":" + to_string(nowtime->tm_mday)
 		+ " " + to_string(nowtime->tm_hour) + ":" + to_string(nowtime->tm_min) + ":" + to_string(nowtime->tm_sec);
 	delete nowtime;
+	nowtime = nullptr;
 }
 
 void Record::Save()
@@ -48,7 +49,7 @@ void Record::SetScore(unsigned int score)
 
 std::ostream& operator<<(std::ostream& out, Record r)
 {
-	if (r.error != "")
+	if (r.error == "")
 	{
 		out << r.m_date << "\t" << r.m_score << "\n";
 	}

@@ -17,7 +17,10 @@ bool Del::ModifyAlgorithm(Bookbase** global_b)
 		}
 		else
 		{
-			target.erase(target.begin() + num);
+			cout << (*(target.begin() + num-1)).first;
+			swap(*(target.begin() + num-1), *(target.end()-1));
+			target.pop_back();
+			cout << "É¾³ý³É¹¦\n";
 		}
 	}
 

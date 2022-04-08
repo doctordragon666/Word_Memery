@@ -40,6 +40,18 @@ bool WordInfo::operator==(WordInfo& a)
 	}
 }
 
+bool WordInfo::operator>(const WordInfo& a)
+{
+	if (this->English.compare(a.English) > 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
 string WordInfo::getc()
 {
 	return Chinese;

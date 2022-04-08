@@ -19,6 +19,7 @@
 */
 
 #include "File.h"
+
 class WordInfo
 {
 public:
@@ -28,6 +29,8 @@ public:
 	WordInfo& operator++();
 	friend ostream& operator<<(ostream& out, WordInfo& w);
 	friend istream& operator>>(istream& in, WordInfo& w);
+	bool operator>(const WordInfo& a);
+
 	bool operator==(WordInfo& a);
 	string gete();
 	string getc();
@@ -38,4 +41,5 @@ protected:
 	string Chinese;
 	string English;
 };
+
 

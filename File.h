@@ -24,6 +24,8 @@
 #include <stdlib.h>
 #include <random>
 #include <ctime>
+#include <functional>
+#include <numeric>
 using namespace std;
 
 inline bool isrange(int choose)
@@ -41,6 +43,7 @@ inline int random(int num)
 	return rand() % num;
 }
 
+//  该方法已经定义在choose内部
 //	template<class T>
 //	void shuffle_word(vector<T>& v, size_t s, int num)
 //	{

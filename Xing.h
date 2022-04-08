@@ -1,4 +1,5 @@
 #pragma once
+#include "File.h"
 #include "WordInfo.h"
 class Xing :
     public WordInfo

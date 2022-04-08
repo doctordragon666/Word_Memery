@@ -62,6 +62,7 @@ void Bookbase::save(vector<pair<WordInfo, string>> v)
 	{
 		m_word.push_back(i.first);
 	}
+	sort(m_word.begin(), m_word.end(), greater<>());
 }
 
 void Bookbase::example()

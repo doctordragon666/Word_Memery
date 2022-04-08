@@ -32,7 +32,7 @@ bool Add::ModifyAlgorithm(Bookbase** global_b)
 		}
 
 		WordInfo w(e, c);
-		target.push_back(make_pair(w, s));
+		target.emplace_back(w, s);
 
 		cout << endl << "Ìí¼Ó³É¹¦" << endl;
 		cout.flush();
